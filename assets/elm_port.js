@@ -4,7 +4,6 @@ var _window = window;
 _window.elmRef = _window.elmRef || {};
 _window.elmRef.elmPortConn = (function (_window) {
   var _document = _window.document;
-  var _body = _document.body;
   var _html = _document.documentElement;
   var app;
 

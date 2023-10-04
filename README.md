@@ -2,6 +2,8 @@ This is my personal website [glue](https://github.com/seanbreckenridge/glue) con
 
 It has [since evolved to something else](https://sean.fish/), but I wanted to have a working version of this up somewhere
 
+This was not actually hosted on geocities, it was just inspired by it
+
 Live at <https://sean.fish/geocities/>
 
 <img src="https://github.com/seanbreckenridge/glue_geocities/blob/main/.github/screenshot.png?raw=true" />

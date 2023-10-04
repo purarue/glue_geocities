@@ -8,15 +8,13 @@ dist: build
 	cp ./assets/elm_port.js ./dist/assets/elm_port.js
 	cp ./assets/bundle.css ./dist/assets/bundle.css
 	cp ./assets/images/* ./dist/assets/images/
-	@echo "Done."
-
+	@echo "Done, check ./dist"
 
 build: $(OUTFILE) ./assets/stars.js
-	@echo "Done."
 
 ./assets/stars.js: elm/src/Stars.elm
 	@echo "Compiling Elm..."
-	./compile_elm
+	cd ./elm; elm make src/Stars.elm --optimize --output=./../assets/stars.js
 
 $(OUTFILE): $(wildcard ./assets/css/*.css)
 	# blazingly fast CSS bundler

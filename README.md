@@ -19,6 +19,7 @@ Live at <https://sean.fish/geocities/>
 ### Build:
 
 ```
+make build
 make
 ```
 

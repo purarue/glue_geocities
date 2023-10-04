@@ -4,6 +4,8 @@ It has [since evolved to something else](https://sean.fish/), but I wanted to ha
 
 Live at <https://sean.fish/geocities/>
 
+<img src="https://github.com/seanbreckenridge/glue_geocities/blob/main/.github/screenshot.png?raw=true" />
+
 ### Requires:
 
 - [`elm`](https://elm-lang.org/)

@@ -1,5 +1,5 @@
 // elm port implementation modified from https://github.com/lucamug/elm-scroll-resize-events
-//  keep refrences to html variables
+//  keep references to html variables
 var _window = window;
 _window.elmRef = _window.elmRef || {};
 _window.elmRef.elmPortConn = (function (_window) {

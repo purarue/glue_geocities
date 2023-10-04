@@ -2,7 +2,11 @@ This is my personal website [glue](https://github.com/seanbreckenridge/glue) con
 
 It has [since evolved to something else](https://sean.fish/), but I wanted to have a working version of this up somewhere
 
-This was not actually hosted on geocities, it was just inspired by it
+This was not actually hosted on [geocities](https://en.wikipedia.org/wiki/GeoCities) (I'm a bit too young for that), it was just inspired by:
+
+- https://www.cameronsworld.net/
+- https://gifcities.org/
+- https://twitter.com/geocitiesbot
 
 Live at <https://sean.fish/geocities/>
 

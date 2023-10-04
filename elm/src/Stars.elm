@@ -139,7 +139,7 @@ generateRandomStar randomNumbers screenData starArr defaultRngVal tillStarCount 
                     ++ [ { fadeType = randInt (indexIntoRng randomNumbers index defaultRngVal) 1 6
                          , starIndex = randInt (indexIntoRng randomNumbers (index + 1) defaultRngVal) 0 9 -- 9 items in the array
                          , loc =
-                            -- use 25 as buffer on the right so that star isnt just in the corner off the page
+                            -- use 25 as buffer on the right so that star isn't just in the corner off the page
                             { x = randInt (indexIntoRng randomNumbers (index + 2) defaultRngVal) 2 (screenData.viewportWidth - 25)
                             , y = randInt (indexIntoRng randomNumbers (index + 3) defaultRngVal) (screenData.scrollY + 2) (screenData.viewportHeight + screenData.scrollY - 25)
                             }
@@ -212,7 +212,7 @@ renderStar star starUrls =
             "top"
             (toPixel star.loc.y)
         , alt ""
-        , src (get star.starIndex starUrls |> withDefault "didnt work")
+        , src (get star.starIndex starUrls |> withDefault "didn't work")
         ]
         []
 

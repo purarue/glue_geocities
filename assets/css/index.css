@@ -89,15 +89,3 @@ body {
 .split-container {
   text-align: center;
 }
-#rubiks {
-  position: absolute;
-  top: 10vh;
-  left: 10vw;
-  z-index: 2;
-}
-#rubiks img {
-  width: auto;
-  min-width: 10vh;
-  max-width: 125px;
-  height: auto;
-}

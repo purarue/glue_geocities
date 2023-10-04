@@ -24,7 +24,7 @@ css:
 	cat ./assets/css/dos_buttons.css >> $(OUTFILE)
 	cat ./assets/css/app.css >> $(OUTFILE)
 	cat ./assets/css/star_keyframes.css >> $(OUTFILE)
-
+	cat ./assets/css/index.css >> $(OUTFILE)
 
 clean:
 	rm -rf dist

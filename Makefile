@@ -21,9 +21,8 @@ $(OUTFILE): $(wildcard ./assets/css/*.css)
 	@echo "Bundling CSS..."
 	cat ./assets/css/skeleton.css > $(OUTFILE)
 	cat ./assets/css/normalize.css >> $(OUTFILE)
-	cat ./assets/css/dos_buttons.css >> $(OUTFILE)
-	cat ./assets/css/app.css >> $(OUTFILE)
 	cat ./assets/css/star_keyframes.css >> $(OUTFILE)
+	cat ./assets/css/dos_buttons.css >> $(OUTFILE)
 	cat ./assets/css/index.css >> $(OUTFILE)
 
 clean:

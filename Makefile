@@ -5,7 +5,7 @@ dist: build
 	mkdir -p ./dist/assets/images
 	cp ./index.html ./dist/index.html
 	cp ./assets/stars.js ./dist/assets/stars.js
-	cp ./assets/elm_port.js ./dist/assets/elm_port.js
+	cp ./elm/elm_port.js ./dist/assets/elm_port.js
 	cp ./assets/bundle.css ./dist/assets/bundle.css
 	cp ./assets/images/* ./dist/assets/images/
 	@echo "Done, check ./dist"

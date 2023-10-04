@@ -1,5 +1,10 @@
 // elm port implementation modified from https://github.com/lucamug/elm-scroll-resize-events
 //  keep references to html variables
+//  this attaches some javascript events to the window
+//  when the window is scrolled or resized, it sends the data to elm
+//
+//  it also generates random numbers and sends them to elm, since
+//  random numbers color the functions in the pure, functional elm
 var _window = window;
 _window.elmRef = _window.elmRef || {};
 _window.elmRef.elmPortConn = (function (_window) {

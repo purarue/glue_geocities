@@ -8,6 +8,8 @@ This was not actually hosted on [geocities](https://en.wikipedia.org/wiki/GeoCit
 - https://gifcities.org/
 - https://twitter.com/geocitiesbot
 
+This also included [an old version of my feed](https://sean.fish/feed/) which [look like this]()
+
 Live at <https://sean.fish/geocities/>
 
 <img src="https://github.com/seanbreckenridge/glue_geocities/blob/main/.github/screenshot.png?raw=true" />

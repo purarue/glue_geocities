@@ -83,19 +83,19 @@ body {
   text-align: center;
 }
 
-#question {
-  position: absolute;
+.top-icons {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
-  right: 0;
-  margin: 0rem;
-  cursor: pointer;
 }
 
-#back-home {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0rem;
+#question {
+  cursor: pointer;
 }
 
 #back-home img {

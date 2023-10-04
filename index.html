@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sean</title>
+    <link rel="stylesheet" href="./assets/bundle.css" ) />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        color: white;
+        font-family: sans-serif;
+      }
+      .container {
+        font-family: lato, sans-serif;
+        font-size: 2rem;
+      }
+      .column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .img-star {
+        position: absolute;
+      }
+
+      .column h2 {
+        font-family: "vt323", verdana, sans-serif;
+        font-size: 5rem;
+        margin-bottom: 0;
+      }
+      .column h2 img {
+        margin-left: 10px;
+        position: relative;
+        bottom: -5px;
+      }
+      .column-img {
+        margin-bottom: 1rem;
+      }
+      .dos-buttons {
+        margin-bottom: 100px;
+      }
+      /* for icons */
+      .dos-buttons img {
+        position: relative;
+        bottom: -2px;
+        left: -5px;
+      }
+      #yo {
+        text-align: center;
+        font-family: "vt323", verdana, sans-serif;
+        font-size: 5rem;
+        margin-top: 10vh;
+        margin-bottom: 1.5em;
+        animation: colorrotate 30s linear 0s infinite;
+      }
+      @keyframes colorrotate {
+        from {
+          color: #ff0000;
+        }
+        14% {
+          color: #ffa500;
+        }
+        28% {
+          color: #ffff00;
+        }
+        42% {
+          color: #008000;
+        }
+        57% {
+          color: #0000ff;
+        }
+        71% {
+          color: #4b0082;
+        }
+        85% {
+          color: #ee82ee;
+        }
+        100% {
+          color: #ff0000;
+        }
+      }
+      .vertical-flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .split-container {
+        text-align: center;
+      }
+      #rubiks {
+        position: absolute;
+        top: 10vh;
+        left: 10vw;
+        z-index: 2;
+      }
+      #rubiks img {
+        width: auto;
+        min-width: 10vh;
+        max-width: 125px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="elm"></div>
+    <div class="container">
+      <div id="yo">yo</div>
+      <div class="row split-container">
+        <div class="one-half column">
+          <div class="vertical-flex-column">
+            <h2>stuff here</h2>
+            <img
+              class="column-img spinning-home"
+              src="./assets/images/home.gif"
+              alt="home"
+            />
+            <div class="dos-buttons">
+              <a class="table-row" href="/feed"
+                ><span class="table-cell">Media Feed</span></a
+              >
+              <a class="table-row" href="/mal_unapproved"
+                ><span class="table-cell">MAL Unapproved</span></a
+              >
+              <a class="table-row" href="/animeshorts"
+                ><span class="table-cell">AnimeShorts</span></a
+              >
+              <a class="table-row" href="https://exobrain.sean.fish/feed/"
+                ><span class="table-cell">Blog</span></a
+              >
+              <a class="table-row" href="https://exobrain.sean.fish/"
+                ><span class="table-cell">ExoBrain</span></a
+              >
+              <a class="table-row" href="/xkcd"
+                ><span class="table-cell">Favorite XKCDs</span></a
+              >
+              <a class="table-row" href="/dvd"
+                ><span class="table-cell">DVD Logo</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="one-half column">
+          <div class="vertical-flex-column">
+            <h2>me elsewhere</h2>
+            <img
+              class="column-img smile"
+              src="./assets/images/globe.gif"
+              alt="globe"
+            />
+            <div class="dos-buttons">
+              <a
+                class="table row"
+                rel="me"
+                href="https://letterboxd.com/purplepinapples/"
+                ><span class="table-cell"
+                  ><img
+                    src="./assets/images/letterboxd.png"
+                    alt=""
+                  />Movies</span
+                ></a
+              >
+              <a
+                class="table row"
+                rel="me"
+                href="https://trakt.tv/users/purplepinapples/ratings/all/all/highest"
+                ><span class="table-cell"
+                  ><img src="./assets/images/trakt.png" alt="" />TV Shows</span
+                ></a
+              >
+              <a
+                class="table row"
+                rel="me"
+                href="https://docs.google.com/spreadsheets/d/12htSAMg67czl8cpkj1mX0TuAFvqL_PJLI4hv1arG5-M/edit#gid=1451660661"
+                ><span class="table-cell"
+                  ><img src="./assets/images/sheets.ico" alt="" />Music
+                  List</span
+                ></a
+              >
+              <a
+                class="table row"
+                rel="me"
+                href="https://www.grouvee.com/user/purplepinapples/shelves/106920-played/?sort_by=their_rating&dir=desc&"
+                ><span class="table-cell"
+                  ><img src="./assets/images/grouvee.ico" alt="" />Video
+                  Games</span
+                ></a
+              >
+              <a
+                class="table row"
+                rel="me"
+                href="https://myanimelist.net/profile/purplepinapples"
+                ><span class="table-cell"
+                  ><img src="./assets/images/mal.png" alt="" />Anime</span
+                ></a
+              >
+              <a
+                class="table row"
+                rel="me"
+                href="https://github.com/seanbreckenridge/"
+                ><span class="table-cell"
+                  ><img src="./assets/images/github.ico" alt="" />GitHub</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/stars.js"></script>
+    <script>
+      // elm port implementation modified from https://github.com/lucamug/elm-scroll-resize-events
+      //  keep refrences to html variables
+      var _window = window;
+      _window.elmRef = _window.elmRef || {};
+      _window.elmRef.elmPortConn = (function (_window) {
+        var _document = _window.document;
+        var _body = _document.body;
+        var _html = _document.documentElement;
+        var app;
+
+        // sends the record off to elm
+        var processScrollOrResize = function () {
+          app.ports.scrollOrResize.send({
+            // how far we've scrolled down on the page
+            scrollY: parseInt(_window.scrollY),
+            // https://developer.mozilla.org/en-US/docs/Web/API/Element/clientHeight
+            // When clientHeight is used on the root element (the <html> element), (or on <body> if the document is in quirks mode), the viewport's height (excluding any scrollbar) is returned.  This is a special case of clientHeight.
+            viewportHeight: parseInt(_html.clientHeight),
+            viewportWidth: parseInt(_html.clientWidth),
+          });
+        };
+
+        var scrollTimer = null;
+        var lastScrollFireTime = 0;
+        var minScrollTime = 1000; // can increase this since the stars are only going to be drawn every few seconds
+        var scrolledOrResized = function () {
+          if (scrollTimer) {
+          } else {
+            var now = new Date().getTime();
+            if (now - lastScrollFireTime > 3 * minScrollTime) {
+              processScrollOrResize();
+              lastScrollFireTime = now;
+            }
+            scrollTimer = setTimeout(function () {
+              scrollTimer = null;
+              lastScrollFireTime = new Date().getTime();
+            }, minScrollTime);
+          }
+        };
+
+        var main = function (initFlags) {
+          app = Elm.Stars.init({
+            node: document.getElementById("elm"),
+            flags: initFlags,
+          });
+          _window.addEventListener("scroll", scrolledOrResized);
+          _window.addEventListener("resize", scrolledOrResized);
+          scrolledOrResized(); // initial call to send data to Elm
+        };
+
+        return {
+          main: main,
+        };
+      })(_window);
+      _window.elmRef.elmPortConn.main({
+        starUrls: [
+          "./assets/images/star1.png",
+          "./assets/images/star2.png",
+          "./assets/images/star3.png",
+          "./assets/images/star4.png",
+          "./assets/images/star5.png",
+          "./assets/images/star6.png",
+          "./assets/images/star7.png",
+          "./assets/images/star8.png",
+          "./assets/images/star9.png",
+        ],
+        randomNumbers: Array(100)
+          .fill()
+          .map(() => Math.random()),
+        defaultRandom: Math.random(),
+      });
+    </script>
+  </body>
+</html>

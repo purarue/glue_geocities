@@ -53,17 +53,9 @@ _window.elmRef.elmPortConn = (function (_window) {
   };
 })(_window);
 _window.elmRef.elmPortConn.main({
-  starUrls: [
-    "./assets/images/star1.png",
-    "./assets/images/star2.png",
-    "./assets/images/star3.png",
-    "./assets/images/star4.png",
-    "./assets/images/star5.png",
-    "./assets/images/star6.png",
-    "./assets/images/star7.png",
-    "./assets/images/star8.png",
-    "./assets/images/star9.png",
-  ],
+  starUrls: Array(9)
+    .fill()
+    .map((_, i) => `./assets/images/star${i + 1}.png`),
   randomNumbers: Array(100)
     .fill()
     .map(() => Math.random()),

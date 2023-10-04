@@ -3,7 +3,7 @@ port module Stars exposing (main)
 -- This generates/animates random stars for the home page, in the viewable area, and handles re-drawing when the screen scrolls
 
 import Array exposing (Array, fromList, get, length)
-import Browser as Browser exposing (element)
+import Browser exposing (element)
 import Browser.Events exposing (Visibility(..))
 import Html exposing (Html, div, img)
 import Html.Attributes exposing (alt, class, id, src, style)

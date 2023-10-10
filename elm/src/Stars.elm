@@ -8,7 +8,6 @@ import Browser.Events exposing (Visibility(..))
 import Html exposing (Html, div, img)
 import Html.Attributes exposing (alt, class, id, src, style)
 import Html.Lazy exposing (lazy2)
-import Json.Decode as Json
 import List exposing (map)
 import Maybe exposing (Maybe, withDefault)
 import Time
@@ -41,8 +40,7 @@ type alias Star =
 
 
 type alias Model =
-    { message : String
-    , active : Visibility
+    { active : Visibility
     , screenData : Maybe ScreenData
     , starUrls : Array String
     , stars : List Star
@@ -61,8 +59,7 @@ type alias ScreenData =
 
 init : Flag -> ( Model, Cmd Msg )
 init flags =
-    ( { message = "Yo"
-      , active = Visible
+    ( { active = Visible
       , screenData = Nothing
       , starUrls = fromList flags.starUrls
       , stars = []

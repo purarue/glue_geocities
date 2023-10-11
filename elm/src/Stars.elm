@@ -90,7 +90,7 @@ generateNewStarLocations : Model -> ScreenData -> Model
 generateNewStarLocations model screenData =
     let
         starCount =
-            20
+            100
 
         -- number of random elements to use for each star
         indexOffset =

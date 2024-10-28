@@ -8,7 +8,7 @@ This was not actually hosted on [geocities](https://en.wikipedia.org/wiki/GeoCit
 - https://gifcities.org/
 - https://twitter.com/geocitiesbot
 
-This also included [an old version of my feed](https://purarue.xyz/feed/) which [look like this](https://github.com/purarue/glue_geocities/blob/main/.github/old_feed.png?raw=true), but re-implementing that as a static site without an API (which doesnt exist anymore, [was a bunch of genservers in elixir which cached the data](https://github.com/purarue/glue/tree/408d738439f05ef4797133f69114d28800710537/lib/glue/feed))
+This also included [an old version of my feed](https://purarue.xyz/feed/) which [looked like this](https://github.com/purarue/glue_geocities/blob/main/.github/old_feed.png?raw=true), but re-implementing that as a static site without an API (which does not exist anymore, [was a bunch of genservers in elixir which cached the data](https://github.com/purarue/glue/tree/408d738439f05ef4797133f69114d28800710537/lib/glue/feed)) seemed painful, so I decided against it.
 
 Live at <https://purarue.xyz/geocities/>
 
@@ -26,3 +26,11 @@ make
 ```
 
 Outputs a static site to `./dist`
+
+### Stars
+
+The stars in the background which sort of twinkle are drawn using [elm](https://elm-lang.org/) (at [elm/src/Stars.elm](elm/src/Stars.elm)) and some [css animations](assets/css/star_keyframes.css)
+
+The `elm` code here is probably not what elm was made for considering how much [javascript glue](./elm/elm_port.js) I had to figure out to send random numbers and events whenever the browser window size changed.
+
+But, it is real nice to have the model and [subscriptions batched](https://elmprogramming.com/subscriptions.html) properly, forcing an error boundary makes writing elm code very delightful.

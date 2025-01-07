@@ -12,7 +12,6 @@ This was not actually hosted on [geocities](https://en.wikipedia.org/wiki/GeoCit
 
 This also included [an old version of my feed](https://purarue.xyz/feed/) which [looked like this](https://github.com/purarue/glue_geocities/blob/main/.github/old_feed.png?raw=true), but re-implementing that as a static site without an API (which does not exist anymore, [was a bunch of genservers in elixir which cached the data](https://github.com/purarue/glue/tree/408d738439f05ef4797133f69114d28800710537/lib/glue/feed)) seemed painful, so I decided against it.
 
-
 <img src="https://github.com/purarue/glue_geocities/blob/main/.github/screenshot.png?raw=true" />
 
 ### Requires:

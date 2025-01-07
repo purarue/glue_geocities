@@ -19,11 +19,11 @@ build: $(OUTFILE) ./assets/stars.js
 $(OUTFILE): $(wildcard ./assets/css/*.css)
 	# blazingly fast CSS bundler
 	@echo "Bundling CSS..."
-	cat ./assets/css/skeleton.css > $(OUTFILE)
-	cat ./assets/css/normalize.css >> $(OUTFILE)
-	cat ./assets/css/star_keyframes.css >> $(OUTFILE)
-	cat ./assets/css/dos_buttons.css >> $(OUTFILE)
-	cat ./assets/css/index.css >> $(OUTFILE)
+	cat ./assets/css/skeleton.css \
+    ./assets/css/normalize.css \
+    ./assets/css/star_keyframes.css \
+    ./assets/css/dos_buttons.css \
+    ./assets/css/index.css > $(OUTFILE)
 
 clean:
 	rm -rf dist
